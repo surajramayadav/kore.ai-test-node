@@ -16,9 +16,9 @@ const { Server } = require("http");
 
 ConnectDatabase();
 
-const PORT = process.env.PORT_PRO || 5000;
+const PORT = process.env.PORT_PRO
 const server = app.listen(PORT, () => {
-  console.log("server is running");
+  console.log("server is running", PORT);
 });
 
 // UnHandled Promise Rejection
