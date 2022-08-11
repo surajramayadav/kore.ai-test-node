@@ -28,9 +28,9 @@ app.use("/api/v1/customer/auth", customerAuth)
 app.use("/api/v1/product", product)
 app.use("/api/v1/order", order)
 
-// app.get("/logo.png", (req, res) => {
-//   res.sendFile(path.join(__dirname, "logo.png"));
-// });
+app.get("/", (req, res) => {
+  res.send("welcome to dairy milk backend")
+});
 // Middleware For error
 app.use(errorMiddleware);
 
